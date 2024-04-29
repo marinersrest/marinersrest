@@ -1,0 +1,35 @@
+/* Remove borders from the header and footer */
+header, footer {
+  border: none;
+}
+
+/* Remove box-shadows if they are used */
+body, .wrapper {
+  box-shadow: none;
+}
+
+/* If lines are applied as top or bottom borders in the main content */
+main {
+  border-top: none;
+  border-bottom: none;
+}
+
+/* Hide the mobile nav trigger checkbox */
+.nav-trigger {
+  display: none;
+}
+
+/* Hide the label for the nav trigger, which contains the hamburger icon */
+.site-nav label {
+  display: none;
+}
+
+/* This will hide empty list items */
+li:empty {
+  display: none;
+}
+
+/* Specifically targeting any '.p-name' class that might be empty */
+.p-name {
+  display: none;
+}

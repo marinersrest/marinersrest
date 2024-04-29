@@ -1,0 +1,35 @@
+# Site settings
+# Note: Some settings disbled initially and will probably be put back
+
+# title: Mariners Rest
+# email: your-email@example.com
+# description: >- # this means to ignore newlines until "baseurl:"
+#   Informational website for MarinersRest.
+# baseurl: "" # the subpath of your site, e.g. /blog
+
+# url: "http://yourdomain.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-optional-front-matter
+  # - jekyll-feed
+
+# Exclude from production build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle
+  - vendor/cache
+  - vendor/gems
+  - vendor/ruby
